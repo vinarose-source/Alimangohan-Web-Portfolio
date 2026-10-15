@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockSync Virtual Solutions | Inventory & Back-End E-Commerce VAs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#1B2A4A',
+                            900: '#10192E',
+                        },
+                        mint: {
+                            400: '#38B09D',
+                            500: '#2E9484',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-hero {
+            background: linear-gradient(135deg, #1B2A4A 0%, #10192E 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- NAVIGATION BAR -->
+    <header class="sticky top-0 z-50 bg-navy-800 text-white shadow-md border-b-2 border-mint-400">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="font-heading font-extrabold text-xl tracking-tight text-white">
+                StockSync <span class="text-mint-400">Virtual Solutions</span>
+            </a>
+            <a href="#audit" class="bg-mint-400 hover:bg-mint-500 text-navy-800 font-bold text-xs sm:text-sm px-4 py-2 rounded-md transition duration-150">
+                Claim Zero-Chaos Audit
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="gradient-hero text-white py-16 sm:py-20 px-4 sm:px-6 lg:px-8 text-center">
+        <div class="max-w-4xl mx-auto">
+            <span class="inline-block bg-mint-400/20 text-mint-400 border border-mint-400/30 text-xs uppercase font-bold tracking-wider px-3 py-1 rounded-full mb-4">
+                Specialized E-Commerce Operations
+            </span>
+            <h1 class="font-heading font-extrabold text-3xl sm:text-5xl leading-tight mb-6">
+                Your Back-End Organized, Your Orders Confident.
+            </h1>
+            <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+                Why e-commerce sellers on Shopee, Lazada, Shopify & Instagram choose us: We bridge the gap between administrative precision and store growth, ensuring you never oversell or lose revenue to manual spreadsheet errors.
+            </p>
+
+            <!-- HERO VISUAL CARDS -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-left">
+                <!-- Card 1 -->
+                <div class="bg-slate-800/80 border border-slate-700 rounded-xl p-4 card-hover">
+                    <div class="h-28 bg-navy-900 rounded-lg flex flex-col justify-center items-center p-3 mb-3 border border-slate-700">
+                        <svg class="w-full h-full text-mint-400" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="200" height="100" rx="6" fill="#10192E"/>
+                            <rect x="10" y="10" width="180" height="18" rx="3" fill="#38B09D"/>
+                            <rect x="10" y="36" width="50" height="15" rx="2" fill="#FFFFFF" fill-opacity="0.8"/>
+                            <rect x="68" y="36" width="60" height="15" rx="2" fill="#FFFFFF" fill-opacity="0.8"/>
+                            <rect x="136" y="36" width="54" height="15" rx="2" fill="#38B09D" fill-opacity="0.8"/>
+                            <rect x="10" y="58" width="50" height="15" rx="2" fill="#FFFFFF" fill-opacity="0.5"/>
+                            <rect x="68" y="58" width="60" height="15" rx="2" fill="#FFFFFF" fill-opacity="0.5"/>
+                            <rect x="136" y="58" width="54" height="15" rx="2" fill="#FFFFFF" fill-opacity="0.5"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading font-bold text-sm text-white mb-1">Live Spreadsheets</h3>
+                    <p class="text-xs text-slate-400">Real-time logs tracking live stock accurately.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-800/80 border border-slate-700 rounded-xl p-4 card-hover">
+                    <div class="h-28 bg-navy-900 rounded-lg flex flex-col justify-center items-center p-3 mb-3 border border-slate-700">
+                        <svg class="w-full h-full" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="200" height="100" rx="6" fill="#10192E"/>
+                            <circle cx="50" cy="50" r="22" fill="#38B09D"/>
+                            <text x="36" y="54" fill="#10192E" font-family="sans-serif" font-weight="bold" font-size="10">Shopee</text>
+                            <circle cx="150" cy="50" r="22" fill="#38B09D"/>
+                            <text x="136" y="54" fill="#10192E" font-family="sans-serif" font-weight="bold" font-size="10">Lazada</text>
+                            <path d="M80 50 H120" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="4 4"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading font-bold text-sm text-white mb-1">Order Syncing</h3>
+                    <p class="text-xs text-slate-400">Preventing costly double-selling across channels.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-800/80 border border-slate-700 rounded-xl p-4 card-hover">
+                    <div class="h-28 bg-navy-900 rounded-lg flex flex-col justify-center items-center p-3 mb-3 border border-slate-700">
+                        <svg class="w-full h-full" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="200" height="100" rx="6" fill="#10192E"/>
+                            <rect x="25" y="15" width="150" height="70" rx="4" fill="#FFFFFF"/>
+                            <rect x="40" y="30" width="120" height="10" rx="2" fill="#38B09D"/>
+                            <rect x="40" y="48" width="90" height="8" rx="2" fill="#10192E"/>
+                            <rect x="40" y="62" width="105" height="8" rx="2" fill="#10192E"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading font-bold text-sm text-white mb-1">Clean Records</h3>
+                    <p class="text-xs text-slate-400">Audit-ready organization for stress-free operations.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-slate-800/80 border border-slate-700 rounded-xl p-4 card-hover">
+                    <div class="h-28 bg-navy-900 rounded-lg flex flex-col justify-center items-center p-3 mb-3 border border-slate-700">
+                        <svg class="w-full h-full" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="200" height="100" rx="6" fill="#10192E"/>
+                            <path d="M60 35 L80 18 L120 18 L140 35 Z" fill="#FFFFFF"/>
+                            <rect x="45" y="35" width="110" height="50" rx="4" fill="#38B09D"/>
+                            <text x="65" y="65" fill="#10192E" font-family="sans-serif" font-weight="bold" font-size="11">FULFILLMENT</text>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading font-bold text-sm text-white mb-1">Fulfillment Flow</h3>
+                    <p class="text-xs text-slate-400">Coordinating orders smoothly to buyers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: WHAT WE OFFER -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+        <div class="bg-navy-800 text-white rounded-2xl p-6 sm:p-10 shadow-xl border-l-8 border-mint-400">
+            <h2 class="font-heading font-bold text-2xl sm:text-3xl mb-8">What We Offer & How We Solve Your Problems</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white/5 border border-white/10 rounded-xl p-6 card-hover">
+                    <div class="flex items-center space-x-3 mb-3">
+                        <div class="w-3 h-3 rounded-full bg-mint-400"></div>
+                        <h3 class="font-heading font-bold text-lg text-mint-400">Inventory Control & Tracking</h3>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        <strong class="text-white">Problem Solved:</strong> Eliminates stock discrepancies, manual entry mistakes, and lost revenue caused by surprise stockouts during peak flash sales.
+                    </p>
+                </div>
+
+                <div class="bg-white/5 border border-white/10 rounded-xl p-6 card-hover">
+                    <div class="flex items-center space-x-3 mb-3">
+                        <div class="w-3 h-3 rounded-full bg-mint-400"></div>
+                        <h3 class="font-heading font-bold text-lg text-mint-400">Admin & Fulfillment Support</h3>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        <strong class="text-white">Problem Solved:</strong> Removes administrative chaos, letting you step out of day-to-day firefighting to focus entirely on scaling your shop.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: OPERATIONS IN ACTION -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="text-center mb-8">
+            <h2 class="font-heading font-bold text-2xl sm:text-3xl text-navy-800">Operations in Action</h2>
+            <p class="text-slate-500 text-sm mt-1">A visual look inside our specialized back-end inventory workflows and audit systems.</p>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div class="bg-navy-800 rounded-xl p-4 text-center border border-slate-200 shadow-sm card-hover">
+                <div class="h-20 bg-navy-900 rounded-lg flex items-center justify-center mb-3">
+                    <span class="text-mint-400 font-bold text-2xl">📊</span>
+                </div>
+                <span class="font-heading font-bold text-xs sm:text-sm text-white">Spreadsheet Cleanup</span>
+            </div>
+            <div class="bg-navy-800 rounded-xl p-4 text-center border border-slate-200 shadow-sm card-hover">
+                <div class="h-20 bg-navy-900 rounded-lg flex items-center justify-center mb-3">
+                    <span class="text-mint-400 font-bold text-2xl">🔗</span>
+                </div>
+                <span class="font-heading font-bold text-xs sm:text-sm text-white">SKU Mapping</span>
+            </div>
+            <div class="bg-navy-800 rounded-xl p-4 text-center border border-slate-200 shadow-sm card-hover">
+                <div class="h-20 bg-navy-900 rounded-lg flex items-center justify-center mb-3">
+                    <span class="text-mint-400 font-bold text-2xl">⚖️</span>
+                </div>
+                <span class="font-heading font-bold text-xs sm:text-sm text-white">Stock Reconciliation</span>
+            </div>
+            <div class="bg-navy-800 rounded-xl p-4 text-center border border-slate-200 shadow-sm card-hover">
+                <div class="h-20 bg-navy-900 rounded-lg flex items-center justify-center mb-3">
+                    <span class="text-mint-400 font-bold text-2xl">📈</span>
+                </div>
+                <span class="font-heading font-bold text-xs sm:text-sm text-white">Live Dashboards</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: PROCESS & CASE STUDY -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+        <!-- STEP PROCESS -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm">
+            <h2 class="font-heading font-bold text-xl sm:text-2xl text-navy-800 mb-2">Our Engagement Process</h2>
+            <p class="text-slate-500 text-xs sm:text-sm mb-6">How we transform chaotic back-end data into a reliable growth engine.</p>
+            
+            <div class="space-y-4">
+                <div class="flex items-start space-x-4 p-4 rounded-xl bg-slate-50 border-l-4 border-mint-400">
+                    <span class="font-heading font-extrabold text-2xl text-mint-400">01</span>
+                    <div>
+                        <h3 class="font-heading font-bold text-sm text-navy-800">The Zero-Chaos Audit</h3>
+                        <p class="text-xs text-slate-600 mt-1">We conduct a complimentary review of your current store records and spreadsheets to pinpoint stock leaks and fulfillment bottlenecks instantly.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-4 p-4 rounded-xl bg-slate-50 border-l-4 border-mint-400">
+                    <span class="font-heading font-extrabold text-2xl text-mint-400">02</span>
+                    <div>
+                        <h3 class="font-heading font-bold text-sm text-navy-800">System Setup & Real-Time Syncing</h3>
+                        <p class="text-xs text-slate-600 mt-1">We deploy The Audit-Ready Store™ framework, restructuring messy logs into precise, automated tracking protocols tailored to your platform.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CASE STUDY -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm">
+            <h2 class="font-heading font-bold text-xl sm:text-2xl text-navy-800 mb-2">Featured Case Study</h2>
+            <p class="text-slate-500 text-xs sm:text-sm mb-6">Multi-Platform Apparel Store Optimization</p>
+
+            <div class="space-y-4">
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                    <h3 class="font-heading font-bold text-xs uppercase text-slate-400 mb-1">01. The Challenge</h3>
+                    <p class="text-xs text-slate-700 leading-relaxed">A multi-platform shop lost profits due to frequent stockouts, order backlogs, and manual record errors during flash sales.</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                    <h3 class="font-heading font-bold text-xs uppercase text-mint-500 mb-1">02. The Solution</h3>
+                    <p class="text-xs text-slate-700 leading-relaxed">We streamlined their SKU database and implemented live tracking, stopping overselling and achieving zero stock discrepancies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: FAQ -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <h2 class="font-heading font-bold text-2xl sm:text-3xl text-navy-800 text-center mb-8">Frequently Asked Questions</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-navy-800 text-white rounded-xl p-6 border-t-4 border-mint-400 shadow-sm">
+                <h3 class="font-heading font-bold text-sm text-mint-400 mb-2">Why hire a specialized inventory VA?</h3>
+                <p class="text-xs text-slate-300 leading-relaxed">Unlike general assistants, our deep expertise in inventory control directly protects your bottom line and prevents costly overselling.</p>
+            </div>
+            <div class="bg-navy-800 text-white rounded-xl p-6 border-t-4 border-mint-400 shadow-sm">
+                <h3 class="font-heading font-bold text-sm text-mint-400 mb-2">What deliverables do you provide?</h3>
+                <p class="text-xs text-slate-300 leading-relaxed">Cleaned inventory logs, live stock-tracking workflows, structured record archives, and dependable fulfillment coordination.</p>
+            </div>
+            <div class="bg-navy-800 text-white rounded-xl p-6 border-t-4 border-mint-400 shadow-sm">
+                <h3 class="font-heading font-bold text-sm text-mint-400 mb-2">How do we start?</h3>
+                <p class="text-xs text-slate-300 leading-relaxed">Claim "The Zero-Chaos Audit"—our complimentary initial check to identify your store's exact operational bottlenecks.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER / CALL TO ACTION -->
+    <footer id="audit" class="bg-navy-900 text-white py-12 px-4 sm:px-6 lg:px-8 mt-12 border-t-4 border-mint-400">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="text-center md:text-left max-w-xl">
+                <h2 class="font-heading font-bold text-xl sm:text-2xl mb-2">
+                    Turning chaotic back-end spreadsheets into a bulletproof engine for growth.
+                </h2>
+                <p class="text-xs text-slate-400">Remote & Global E-commerce Support</p>
+            </div>
+            <div class="text-center md:text-right space-y-3">
+                <a href="mailto:hello@stocksyncva.com" class="inline-block bg-mint-400 hover:bg-mint-500 text-navy-800 font-bold text-sm px-6 py-3 rounded-full transition duration-150">
+                    Claim Your Zero-Chaos Audit
+                </a>
+                <div class="text-xs text-slate-400 space-y-1 pt-1">
+                    <p>📧 hello@stocksyncva.com</p>
+                    <p>📞 +1 (123) 456-7890</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
